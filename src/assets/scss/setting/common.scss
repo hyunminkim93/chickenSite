@@ -1,3 +1,8 @@
-* {
-    background-color: #9ecac9;
+body {
+    background-color: var(--background);
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
 }
