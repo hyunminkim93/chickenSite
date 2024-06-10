@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import BarunData from '../data/chickenlist-main/barunChicken/barunChicken_2024-05-27.json';
 import defaultImage from '../assets/img/defaultck.jpg';
+import Main from '../components/section/Main';
 
 
 const Atteck = () => {
@@ -11,7 +12,7 @@ const Atteck = () => {
     }, []);
 
     return (
-        <div>
+        <Main>
             <h1 className='menu__title'>
                 바른 치킨
             </h1>
@@ -31,7 +32,7 @@ const Atteck = () => {
                 ))}
             </div>
 
-        </div>
+        </Main>
     )
 }
 

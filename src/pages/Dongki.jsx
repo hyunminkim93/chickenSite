@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import dongkidata from '../data/chickenlist-main/dongkiChicken/dongkiChicken_2024-05-27.json';
 import defaultImage from '../assets/img/defaultck.jpg';
+import Main from '../components/section/Main';
 
 const Atteck = () => {
     const [data, setData] = useState([]);
@@ -10,7 +11,7 @@ const Atteck = () => {
     }, []);
 
     return (
-        <div>
+        <Main>
             <h1 className='menu__title'>
                 동키 치킨
             </h1>
@@ -31,7 +32,7 @@ const Atteck = () => {
                 ))}
             </div>
 
-        </div>
+        </Main>
     )
 }
 

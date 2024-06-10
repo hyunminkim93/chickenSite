@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Gcovachickendata from '../data/chickenlist-main/gcova/gcova_2024-05-27.json';
+import Main from '../components/section/Main';
 
 const Atteck = () => {
     const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ const Atteck = () => {
     }, []);
 
     return (
-        <div>
+        <Main>
             <h1 className='menu__title'>
                 지코바치킨
             </h1>
@@ -29,7 +30,7 @@ const Atteck = () => {
                     </Fragment>
                 ))}
             </div>
-        </div>
+        </Main>
     )
 }
 

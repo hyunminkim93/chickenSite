@@ -1,5 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import Hosigichickendata from '../data/chickenlist-main/Hosigichicken/Hosigichicken_2024-05-17.json';
+import Main from '../components/section/Main';
 
 const Atteck = () => {
     const [data, setData] = useState([]);
@@ -9,7 +10,7 @@ const Atteck = () => {
     }, []);
 
     return (
-        <div>
+        <Main>
             <h1 className='menu__title'>
                 호식이두마리
             </h1>
@@ -28,7 +29,7 @@ const Atteck = () => {
                     </Fragment>
                 ))}
             </div>
-        </div>
+        </Main>
     )
 }
 

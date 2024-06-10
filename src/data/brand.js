@@ -1,3 +1,5 @@
+
+
 import logo1 from '../assets/img/logo/atteck__logo.png';
 import logo2 from '../assets/img/logo/barun__logo.png';
 import logo3 from '../assets/img/logo/logo3.png';
@@ -122,4 +124,4 @@ export const brandlogo = [
         img: logo24
     }
 
-]
+];
