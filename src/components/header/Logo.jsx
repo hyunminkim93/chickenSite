@@ -1,14 +1,12 @@
-import React from 'react'
-import { GiChicken } from 'react-icons/gi'
-
+import React from 'react';
+import logo from '../../assets/img/logo3.png'
 const Logo = () => {
     return (
-        <h1 className='header__logo'>
+        <div className='header__logo'>
             <a href="/">
-                <em><GiChicken /></em>
-                <span>치킨 브랜드 모음집</span>
+                <img src={logo} alt="" />
             </a>
-        </h1>
+        </div>
     )
 }
 

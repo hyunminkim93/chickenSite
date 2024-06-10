@@ -1,7 +1,7 @@
 import React from 'react'
+
 import Logo from '../header/Logo'
 import Menu from '../header/Menu'
-
 
 const Header = () => {
     return (
@@ -11,4 +11,5 @@ const Header = () => {
         </header>
     )
 }
+
 export default Header

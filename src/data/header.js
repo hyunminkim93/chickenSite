@@ -70,10 +70,6 @@ export const headerMenus = [
         src: "/kkanbu"
     },
     {
-        title: "두마리치킨",
-        src: "/kkanbu"
-    },
-    {
         title: "계동치킨",
         src: "/kyedong"
     },

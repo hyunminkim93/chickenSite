@@ -23,7 +23,6 @@ import Dongki from './pages/Dongki';
 import Gamach from './pages/Gamach';
 import Hoolala from './pages/Hoolala';
 import Kkanbu from './pages/Kkanbu';
-import Kkubeurak from './pages/Kkubeurak';
 import Kyedong from './pages/Kyedong';
 import Mexicana from './pages/Mexicana';
 import Puradak from './pages/Puradak';
@@ -56,7 +55,6 @@ const App = () => {
         <Route path="/gamach" element={<Gamach />} />
         <Route path="/hoolala" element={<Hoolala />} />
         <Route path="/kkanbu" element={<Kkanbu />} />
-        <Route path="/kkubeurak" element={<Kkubeurak />} />
         <Route path="/kyedong" element={<Kyedong />} />
         <Route path="/mexicana" element={<Mexicana />} />
         <Route path="/puradak" element={<Puradak />} />

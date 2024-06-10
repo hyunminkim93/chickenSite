@@ -1,0 +1,121 @@
+.header__logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    img {
+        width: 220px;
+        height: 110px;
+        object-fit: cover;
+    }
+}
+
+.header__menu {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 40px;
+
+    .menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        font-family: var(--fontG);
+        font-weight: 500;
+
+        li {
+            width: 23%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s;
+
+            &:hover {
+
+                .submenu {
+                    display: block;
+                }
+            }
+
+            a {
+                display: block;
+            }
+        }
+
+        .submenu {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: var(--white);
+            border-radius: 30px;
+            z-index: 1;
+            padding: 10px;
+            min-width: 800px;
+            gap: 10px;
+
+            ul {
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+
+                li {
+                    width: 23%;
+
+                    a {
+                        width: 100%;
+                        text-align: center;
+                        display: inline-block;
+                        padding: 10px;
+                        color: var(--black);
+                        transition: all 0.3s;
+
+                        &:hover {
+                            background-color: #ffb700;
+                            color: var(--black);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 반응형 디자인 추가
+@media screen and (max-width: 1024px) {
+    .header__menu .menu .submenu {
+        min-width: 600px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu .menu .submenu {
+        min-width: 400px;
+    }
+
+    .header__menu .menu .submenu ul li {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header__menu .menu .submenu {
+        min-width: 100%;
+    }
+
+    .header__menu .menu .submenu ul {
+        flex-direction: column;
+    }
+
+    .header__menu .menu .submenu ul li {
+        width: 100%;
+    }
+}
