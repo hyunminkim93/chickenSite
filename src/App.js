@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from './components/section/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { ThemeProvider, useTheme } from './context/ThemeContext';
 import Home from './pages/Home';
 import Bbqchicken from './pages/Bbqchicken';
 import Bhcchicken from './pages/Bhcchicken';
@@ -29,8 +30,21 @@ import Puradak from './pages/Puradak';
 import Ttobongee from './pages/Ttobongee';
 
 const App = () => {
+
   return (
-    <BrowserRouter>
+    <ThemeProvider>
+      <BrowserRouter>
+        <MainApp />
+      </BrowserRouter>
+    </ThemeProvider >
+  );
+};
+
+const MainApp = () => {
+  const { theme } = useTheme(); // useTheme 훅을 이곳에서 사용
+
+  return (
+    <div className={`body ${theme}`}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -61,7 +75,7 @@ const App = () => {
         <Route path="/ttobongee" element={<Ttobongee />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </div>
   );
 };
 export default App;

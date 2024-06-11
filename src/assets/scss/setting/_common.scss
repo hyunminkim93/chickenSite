@@ -6,3 +6,12 @@ body {
     max-width: 1260px;
     margin: 0 auto;
 }
+
+.body {
+    background-color: #f7f6f7;
+}
+
+.body.dark {
+    background: #222;
+    transition: 0.5s;
+}
