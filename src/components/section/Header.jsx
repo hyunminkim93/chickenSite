@@ -1,6 +1,4 @@
 import React from 'react';
-import search_icon_light from '../../assets/test/search-w.png';
-import search_icon_dark from '../../assets/test/search-b.png';
 import toggle_light from '../../assets/test/night.png';
 import toggle_dark from '../../assets/test/day.png';
 
@@ -8,6 +6,7 @@ import { GiChicken } from "react-icons/gi";
 import { GiChickenOven } from "react-icons/gi";
 
 import { useTheme } from '../../context/ThemeContext'; // Context에서 제공하는 훅 임포트
+import Search from './Search'; // Search 컴포넌트 임포트
 
 const Header = () => {
     const { theme, setTheme } = useTheme(); // useTheme 훅을 사용하여 theme와 setTheme 접근
@@ -26,14 +25,11 @@ const Header = () => {
                         <GiChickenOven size={40} className='logo' />
                     )}
                     <span>Chicken House</span>
-
                 </a>
             </div>
             <div className='search-box'>
-                <input type="text" placeholder='찾으시는치킨있나요??' />
-                <img src={theme === 'light' ? search_icon_light : search_icon_dark} alt="" />
+                <Search /> {/* Search 컴포넌트를 사용 */}
             </div>
-
             <img onClick={toggleMode} src={theme === 'light' ? toggle_light : toggle_dark} alt="" className='toggle-icon' />
         </header>
     );

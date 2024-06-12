@@ -2,6 +2,7 @@ import React from 'react';
 import Header from './components/section/Header';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { ThemeProvider, useTheme } from './context/ThemeContext';
+import { DataProvider } from './context/DataContext';
 import Home from './pages/Home';
 import Bbqchicken from './pages/Bbqchicken';
 import Bhcchicken from './pages/Bhcchicken';
@@ -28,14 +29,17 @@ import Kyedong from './pages/Kyedong';
 import Mexicana from './pages/Mexicana';
 import Puradak from './pages/Puradak';
 import Ttobongee from './pages/Ttobongee';
+import Search from './components/section/Search';
 
 const App = () => {
 
   return (
     <ThemeProvider>
-      <BrowserRouter>
-        <MainApp />
-      </BrowserRouter>
+      <DataProvider>
+        <BrowserRouter>
+          <MainApp />
+        </BrowserRouter>
+      </DataProvider>
     </ThemeProvider >
   );
 };
@@ -46,6 +50,7 @@ const MainApp = () => {
   return (
     <div className={`body ${theme}`}>
       <Header />
+      <Search />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bbqchicken" element={<Bbqchicken />} />
