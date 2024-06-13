@@ -1,12 +1,12 @@
 export const headerMenus = [
     {
-        title: "BBQ치킨",
+        title: "BBQ",
         src: "/bbqchicken"
     }, {
-        title: "BHC치킨",
+        title: "BHC",
         src: "/bhcchicken"
     }, {
-        title: "호식이두마리",
+        title: "호식이두마리치킨",
         src: "/hosigichicken"
     }, {
         title: "지코바",
@@ -34,7 +34,7 @@ export const headerMenus = [
         title: "굽네치킨",
         src: "/goobne"
     }, {
-        title: "순살만공격치킨",
+        title: "순살만공격",
         src: "/atteck"
     },
     {
@@ -42,7 +42,7 @@ export const headerMenus = [
         src: "/barun"
     },
     {
-        title: "처갓집치킨",
+        title: "처갓집양념치킨",
         src: "/cheogaji"
     },
     {
@@ -74,11 +74,11 @@ export const headerMenus = [
         src: "/kyedong"
     },
     {
-        title: "멕시카나치킨",
+        title: "멕시카나",
         src: "/mexicana"
     },
     {
-        title: "프라닭",
+        title: "푸라닭",
         src: "/puradak"
     },
     {
