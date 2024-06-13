@@ -1,8 +1,8 @@
 import React from 'react'
 import Main from '../components/section/Main'
 import Banner from '../components/home/Banner'
-import Video from '../components/video/Video'
 import Logo from '../components/home/Logo'
+import Video from '../components/video/Video'
 import ChartMain from '../components/chart/ChartMain'
 import Bottom from '../components/home/Bottom'
 
