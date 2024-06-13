@@ -82,7 +82,7 @@
     .logo-img {
         display: block;
         width: 200px;
-        height: 200px;
+        height: 180px;
         background-color: var(--white);
         object-fit: contain;
         object-position: center;
@@ -149,6 +149,7 @@
 
     .flip-card {
         background-color: #222;
+        transition: all 0.5s;
     }
 }
 

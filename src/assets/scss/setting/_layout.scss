@@ -37,13 +37,15 @@ CSS 구조 개요
     margin: 0 auto;
 }
 
-.dark {
+
 
     #footer {
-        background-color: #222;
-        transition: all 0.5s;
+        
+        .dark {
+            transition: all 0.5s;
+        }
     }
-}
+
 
 #footer p.maile {
     font-size: 0.875rem;
