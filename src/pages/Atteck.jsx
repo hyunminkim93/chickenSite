@@ -41,7 +41,6 @@ const Atteck = () => {
                     >
                         주문하기
                     </button>
-                    <a href="/">홈으로</a>
                 </div>
             </div>
         </Main>
