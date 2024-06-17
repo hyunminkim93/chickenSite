@@ -1,7 +1,8 @@
+# 모든 치킨 브랜드 모음 사이트
 <img width="1654" alt="스크린샷 2024-06-17 오후 4 44 07" src="https://github.com/hyunminkim93/chickenSite/assets/163366255/f8a093e9-54d5-43f6-aaf1-e5a20c4566d7">
 
 <img width="1704" alt="스크린샷 2024-06-17 오후 4 44 22" src="https://github.com/hyunminkim93/chickenSite/assets/163366255/2f71935f-e9cb-498c-8240-b0ea99a3810d">
-# 모든 치킨 브랜드 모음 사이트
+
 
 ![image](https://github.com/nicejmp1/chiken/assets/163364733/1d04a3d3-79ae-4abd-bd23-d40871c9fb9f)
 
