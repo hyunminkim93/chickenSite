@@ -1,40 +1,39 @@
-# Youtube API를 이용한 음악 사이트   
-- 나는 음악듣는것을 좋아하기 떄문에 음악 사이트를 만들려고 한다.
+<img width="1654" alt="스크린샷 2024-06-17 오후 4 44 07" src="https://github.com/hyunminkim93/chickenSite/assets/163366255/f8a093e9-54d5-43f6-aaf1-e5a20c4566d7">
 
-## 작업 순서
-1. node.js 설치 / 버전확인   
-2. react 설치   
-3. 라이브러리 설치   
-4. 폴더 셋팅 : 필요없는 파일 제거   
-5. header 설정   
-6. suspense 설정   
-7. 각 페이지 메타 태그 설정(HelmetProvider)   
+<img width="1704" alt="스크린샷 2024-06-17 오후 4 44 22" src="https://github.com/hyunminkim93/chickenSite/assets/163366255/2f71935f-e9cb-498c-8240-b0ea99a3810d">
+# 모든 치킨 브랜드 모음 사이트
 
-## 필요한 라이브러리 설치   
-- react를 설치  `npm create-react-app 폴더이름` : 폴더를 생략하고 싶으면 .으로 표시   
-- react-router-dom 설치 `npm install react-router-dom` : 주소를 설정하기 위한 라이브러리.  
-- axios 설치 `npm install axios`  : API 라이브러리   
-- react icon 설치 `npm install react-icons` : 리엑트에 필요한 아이콘   
-- react-player 설치 `npm install react-player` : 유튜브 영상 재생  
-- sass 설치 `npm install sass` : CSS 라이브러리   
-- react-helmet-async 설치 `npm install react-helmet-async`   
-- swiper 설치 `npm install swiper` : 이미지 슬라이드   
+![image](https://github.com/nicejmp1/chiken/assets/163364733/1d04a3d3-79ae-4abd-bd23-d40871c9fb9f)
 
-## rafc   
-파일 내용 자동생성   
+# 👥 프로젝트 참여자 
+- [박정민](https://github.com/nicejmp1)
+- [김현민](https://github.com/hyunminkim93)
+<br>
 
-## 한번에 설치
-````bash
-npm install react-router-dom axios react-icons react-player sass react-helmet-async swiper
-````
+# 📒 프로젝트 개요
+1. 제작동기
+2. 목표성과
+3. 기대효과
+4. 사용한 기술
+5. 기능 설명
+<br>
 
-## 실행하기
-`npm start` : 리액트 시작하기!
+# 🖥️ 프로젝트 제작 동기
+한국에서 치킨은 단순한 음식이 아니라, 문화적 아이콘이자 사람들의 일상에 깊숙이 자리 잡은 즐거움 중 하나입니다. 하지만 치킨 브랜드와 그 특성을 한눈에 비교하고 파악할 수 있는 플랫폼의 부재는 소비자들의 선택을 어렵게 합니다. 이에 다양한 치킨 브랜드의 정보를 모아, 쉽고 빠르게 비교할 수 있는 웹사이트를 제작하기로 결심하였습니다.
 
-## 사용 스택
-- node.js 설치   
+<br>
 
-## 트러블 슈팅
-1. npx create-react-app . 실행 후 에러 발생 시
--> 만약 경로 설정 관련 에러가 발생한다면, 해당 경로에 들어가 폴더에 npm 초기화 폴더를 만들어준 후
-다시 npx create-react-app .을 입력하고 'y'를 눌러줍니다.# youtubeAPI
+# 📈 목표 성과
+<h2>정보 제공</h2>
+
+- 브랜드별 상세 정보: 모든 주요 치킨 브랜드에 대한 상세 정보 제공
+- 메뉴 목록 및 가격
+- 브랜드별 특별 프로모션 및 이벤트 정보
+- 매장 위치 및 연락처 정보
+- 고객 리뷰 및 평점 시스템
+
+<h2>사용자 경험 개선</h2>
+
+- 직관적 인터페이스 설계: 사용자가 정보를 쉽게 찾고 비교할 수 있도록 명확하고 간결한 디자인을 구현.
+- 개인화 기능: 사용자의 선호도와 위치 기반 서비스를 통해 개인화된 추천을 제공.
+- 다양한 검색 필터: 가격, 메뉴 종류, 사용자 평가 등 다양한 기준으로 검색할 수 있는 기능을 제공하여 사용자가 원하는 메뉴를 쉽게 찾을 수 있게 함.
