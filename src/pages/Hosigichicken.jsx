@@ -3,7 +3,7 @@ import Hosigichickendata from '../data/chickenlist-main/Hosigichicken/Hosigichic
 import Main from '../components/section/Main';
 import defaultImage from '../assets/img/defaultck.jpg';
 
-const Atteck = () => {
+const Hosigichicken = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
@@ -24,8 +24,8 @@ const Atteck = () => {
                     {data.map((item, key) => (
                         <Fragment key={key}>
                             <ul className='menu__chiken'>
-                            <li className='menu__img'><img src={item.img || defaultImage} alt={item.Menu} /></li>
                                 <div className='menu__list'>
+                                    <li className='menu__img'><img src={item.MenuImage || defaultImage} alt={item.Menu} /></li>
                                     <li className='tit'><span>{item.Menu}</span></li>
                                     <li className='sub'><span>{item.Sub}</span></li>
                                     <li className='pic'><span>{item.Price}</span></li>
@@ -47,4 +47,4 @@ const Atteck = () => {
     )
 }
 
-export default Atteck
+export default Hosigichicken
